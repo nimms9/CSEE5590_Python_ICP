@@ -4,4 +4,4 @@ for key,value in l:
     di.setdefault(key,[]).append(value)#appending tuples to the dictionary using setdefault method
 print("Dictionary:",di)
 sorted_di=sorted(di.items(), key=lambda x:x[0])#soritng the key value pairs using lambda and sorted method
-print("Sorted:",sorted_di)
+print("Sorted:",dict(sorted_di))
