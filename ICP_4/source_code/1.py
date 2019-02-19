@@ -14,5 +14,5 @@ model=GaussianNB()
 model.fit(x_train,y_train)
 #Making Predictions
 y_pred=model.predict(x_test)
-#Evaluating the model
-print(confusion_matrix(y_test,y_pred))
+#Computed the confusion matrix to evaluate the accuracy of a classification
+print("Confusion matrix:\n",confusion_matrix(y_test,y_pred))

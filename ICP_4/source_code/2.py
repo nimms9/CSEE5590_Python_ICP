@@ -13,5 +13,5 @@ x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=20
 clf=SVC(kernel='linear',C=1).fit(x_train,y_train)
 #Making Predictions
 y_pred=clf.predict(x_test)
-#Evaluating the model
-print(confusion_matrix(y_test,y_pred))
+#Computed the confusion matrix to evaluate the accuracy of a classification
+print("Confusion matrix:\n",confusion_matrix(y_test,y_pred))
